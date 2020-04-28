@@ -88,17 +88,17 @@ class LoginForm extends StatelessWidget {
                                   ],
                                 ),
                               ),
-                              GestureDetector(
-                                onTap: () {
-                                  navegationBack(context: context);
-                                },
-                                child: Text(
-                                  'Voltar',
-                                  style: TextStyle(
-                                      color: Theme.of(context).accentColor),
-                                  // style: kLinkTextStyle,
-                                ),
-                              ),
+                              // GestureDetector(
+                              //   onTap: () {
+                              //     navegationBack(context: context);
+                              //   },
+                              //   child: Text(
+                              //     'Voltar',
+                              //     style: TextStyle(
+                              //         color: Theme.of(context).accentColor),
+                              //     style: kLinkTextStyle,
+                              //   ),
+                              // ),
                             ],
                           ),
                         ),
