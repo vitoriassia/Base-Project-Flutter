@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 
 import 'drawer.menu.dart';
 
-class CoWorkingScaffold extends StatelessWidget {
+class DefaultScaffold extends StatelessWidget {
   final Widget body;
   final List<Widget> children;
   final String screen;
 
-  const CoWorkingScaffold({Key key, this.body, this.screen, this.children})
+  const DefaultScaffold({Key key, this.body, this.screen, this.children})
       : super(key: key);
 
   @override
@@ -25,9 +25,9 @@ class CoWorkingScaffold extends StatelessWidget {
               iconTheme: Theme.of(context).iconTheme,
               backgroundColor: Colors.white,
               title: Image.asset(
-                'assets/icons/corporate-color-2.png',
+                'assets/icons/logo_principal.png',
                 fit: BoxFit.cover,
-                height: 22,
+                height: 55,
               ),
               actions: <Widget>[
                 IconButton(

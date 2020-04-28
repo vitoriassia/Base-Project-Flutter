@@ -50,11 +50,11 @@ class DrawerMenu extends StatelessWidget {
                         color: Colors.white,
                       ),
                       accountName: Text(
-                        userModel.name,
+                        'userModel.name',
                         style: TextStyle(color: Colors.black),
                       ),
                       accountEmail: Text(
-                        userModel.email,
+                        'userModel.email',
                         style: TextStyle(color: Colors.black),
                       ),
                       currentAccountPicture: CircleAvatar(

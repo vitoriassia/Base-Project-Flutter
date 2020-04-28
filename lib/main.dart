@@ -1,3 +1,4 @@
+import 'package:app/views/homeView/home.view.dart';
 import 'package:app/views/loginView/login.view.dart';
 import 'package:flutter/material.dart';
 
@@ -38,6 +39,7 @@ class MyApp extends StatelessWidget {
         ],
         routes: {
           LoginView.id: (context) => LoginView(),
+          HomeView.id: (context) => HomeView(),
         },
         title: kAppTitle,
         theme: defaultThemeData,
@@ -52,7 +54,7 @@ class MyApp extends StatelessWidget {
           //           : LoginScreen();
           //     });
           //   case LoginScreen.id:
-          return MaterialPageRoute(builder: (_) => LoginView());
+          return MaterialPageRoute(builder: (_) => HomeView());
         },
       ),
     );
