@@ -12,6 +12,7 @@ var defaultThemeData = ThemeData.light().copyWith(
   brightness: Brightness.light,
   primaryColor: primaryColorApp,
   accentColor: baseColorApp,
+  iconTheme: IconThemeData(color: baseColorApp),
   scaffoldBackgroundColor: baseGreyColorApp,
   textSelectionHandleColor: baseColorApp,
   textSelectionColor: baseColorApp,

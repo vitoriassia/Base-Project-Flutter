@@ -1,4 +1,3 @@
-import 'package:app/utils/navigation.dart';
 import 'package:app/view-models/login.viewmodel.dart';
 import 'package:app/widget/busy.button.dart';
 import 'package:flutter/material.dart';
@@ -106,7 +105,7 @@ class LoginForm extends StatelessWidget {
                     ),
                     Image.asset(
                       'assets/icons/logo_footer.png',
-                      height: 36,
+                      height: 26,
                     ),
                   ],
                 ),
