@@ -5,11 +5,13 @@ import 'package:provider/provider.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'constant.dart';
+import 'locator.dart';
+import 'stores/user.store.dart';
 //bool _isAuthenticated = false;
 //UserService _userService;
 
 void main() async {
-  //setupLocator();
+  setupLocator();
   WidgetsFlutterBinding.ensureInitialized();
   //_userService = UserService();
   //_isAuthenticated = await _userService.isAuthenticated();
@@ -21,7 +23,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        //ChangeNotifierProvider(create: (context) => UserStore()),
+        ChangeNotifierProvider(create: (context) => UserStore()),
       ],
       child: MaterialApp(
         localizationsDelegates: [
