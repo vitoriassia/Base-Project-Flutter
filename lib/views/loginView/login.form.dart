@@ -1,4 +1,6 @@
+import 'package:app/utils/navigation.dart';
 import 'package:app/view-models/login.viewmodel.dart';
+import 'package:app/views/homeView/home.view.dart';
 import 'package:app/widget/busy.button.dart';
 import 'package:flutter/material.dart';
 
@@ -78,10 +80,10 @@ class LoginForm extends StatelessWidget {
                                       isOutline: false,
                                       isBusy: model.state == ViewState.busy,
                                       onPressed: () async {
-                                        //   if (await model.login(context))
-                                        //     navegationTowithAnimation(
-                                        //         context: context,
-                                        //         page: HomeView());
+                                        if (await model.login(context))
+                                          navegationTowithAnimationRemoveUtils(
+                                              context: context,
+                                              page: HomeView());
                                       },
                                     ),
                                   ],

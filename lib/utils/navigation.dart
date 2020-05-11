@@ -11,6 +11,16 @@ void navegationTowithAnimation({context, Widget page}) {
   );
 }
 
+void navegationTowithAnimationRemoveUtils({context, Widget page}) {
+  Navigator.pushAndRemoveUntil(
+    context,
+    ScaleRoute(
+      page: page,
+    ),
+    (r) => false,
+  );
+}
+
 void navegationTo({context, page}) {
   Navigator.pushNamed(context, page);
 }

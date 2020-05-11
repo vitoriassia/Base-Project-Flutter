@@ -6,19 +6,16 @@ class AccountRepository {
 
   Future<ResponseModel> loginAccount(email, password) async {
     //autenticacao
-    //chamada para api
+    // Se tiver api seria algo assim :
     // var response;
     // response = await _api.login(email, password);
 
     // return ResponseModel.fromResponseLogin(response);
-  }
 
-  Future<ResponseModel> createAccount(UserModel user, passwordConfirm) async {
-    //autenticacao
-    //chamada para api
-    // var response;
-    // response = await _api.createUser(user, passwordConfirm);
-
-    // return ResponseModel.fromResponseCreateUser(response);
+    return ResponseModel(
+      data: UserModel(
+          id: 1, name: 'Vitor Ferreira Iassia', email: 'iassiavitor@gmail.com'),
+      status: true,
+    );
   }
 }

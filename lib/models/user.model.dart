@@ -15,7 +15,7 @@ class UserModel {
   String cellphone;
   // DateTime dataNascimento;
 
-  UserModel(
+  UserModel({
     this.id,
     this.name,
     this.email,
@@ -31,7 +31,7 @@ class UserModel {
     this.password,
     this.cellphone,
     // this.dataNascimento,
-  );
+  });
 
   UserModel.fromJson(Map<String, dynamic> json) {
     id = json['id'];
