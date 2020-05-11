@@ -54,7 +54,7 @@ class MyApp extends StatelessWidget {
           //           : LoginScreen();
           //     });
           //   case LoginScreen.id:
-          return MaterialPageRoute(builder: (_) => HomeView());
+          return MaterialPageRoute(builder: (_) => LoginView());
         },
       ),
     );
