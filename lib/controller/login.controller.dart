@@ -22,7 +22,7 @@ class LoginController {
     if (user.status) {
       UserModel newUserModel = user.data;
       Provider.of<UserStore>(context, listen: false).setUser(newUserModel);
-      await _service.addstorage('id', newUserModel.toString());
+      await _service.addstorage('id', newUserModel.id.toString());
       await _service.addstorage('access_token', newUserModel.token.toString());
     } else {
       responseMessage(user.data, 'error', context);
