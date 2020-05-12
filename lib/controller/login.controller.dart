@@ -20,7 +20,7 @@ class LoginController {
   Future<bool> login(String email, String password, context) async {
     ResponseModel user = await repository.loginAccount(email, password);
     if (user.status) {
-      UserModel newUserModel = UserModel.fromJson(user.data);
+      UserModel newUserModel = user.data;
       Provider.of<UserStore>(context, listen: false).setUser(newUserModel);
       await _service.addstorage('id', newUserModel.toString());
       await _service.addstorage('access_token', newUserModel.token.toString());
