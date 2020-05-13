@@ -1,6 +1,6 @@
 import 'package:get_it/get_it.dart';
 
-import 'core/api.dart';
+import 'core/services/api.dart';
 import 'core/storage.dart';
 import 'view-models/login.viewmodel.dart';
 

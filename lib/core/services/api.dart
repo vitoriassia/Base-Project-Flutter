@@ -1,7 +1,6 @@
 import 'package:app/core/storage.dart';
+import 'package:app/locator.dart';
 import 'package:dio/dio.dart';
-
-import '../locator.dart';
 
 class Api {
   final dio = new Dio()
