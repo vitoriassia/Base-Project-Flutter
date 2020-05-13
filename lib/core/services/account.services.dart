@@ -1,7 +1,7 @@
 import 'package:app/core/models/response.model.dart';
 import 'package:app/core/models/user.model.dart';
 
-class AccountRepository {
+class AccountService {
   //final Api _api = locator<Api>();
 
   Future<ResponseModel> loginAccount(email, password) async {

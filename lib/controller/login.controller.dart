@@ -1,9 +1,9 @@
 import 'package:app/controller/user.controller.dart';
 import 'package:app/core/models/response.model.dart';
 import 'package:app/core/models/user.model.dart';
+import 'package:app/core/services/account.services.dart';
 import 'package:app/core/storage.dart';
 
-import 'package:app/repositories/account.repository.dart';
 import 'package:app/stores/user.store.dart';
 import 'package:app/utils/response.message.dart';
 import 'package:provider/provider.dart';
@@ -11,11 +11,11 @@ import 'package:provider/provider.dart';
 import '../locator.dart';
 
 class LoginController {
-  AccountRepository repository;
+  AccountService repository;
   UserController userController = new UserController();
   StorageService _service = locator<StorageService>();
   LoginController() {
-    repository = new AccountRepository();
+    repository = new AccountService();
   }
 
   Future<bool> login(String email, String password, context) async {

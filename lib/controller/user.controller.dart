@@ -1,11 +1,11 @@
 import 'package:app/core/models/user.model.dart';
-import 'package:app/repositories/user.repository.dart';
+import 'package:app/core/services/user.services.dart';
 
 class UserController {
-  UserRepository repository;
+  UserService repository;
 
   UserController() {
-    repository = new UserRepository();
+    repository = new UserService();
   }
 
   Future<void> editUser({UserModel userModel, context}) async {

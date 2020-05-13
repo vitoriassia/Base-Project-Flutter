@@ -1,7 +1,7 @@
 import 'package:app/core/models/response.model.dart';
 import 'package:app/core/models/user.model.dart';
 
-class UserRepository {
+class UserService {
   //Api _api = locator<Api>();
 
   Future<ResponseModel> editUser(
