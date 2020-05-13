@@ -1,6 +1,5 @@
-import 'package:app/models/user.model.dart';
+import 'package:app/core/models/user.model.dart';
 import 'package:app/repositories/user.repository.dart';
-import 'package:provider/provider.dart';
 
 class UserController {
   UserRepository repository;

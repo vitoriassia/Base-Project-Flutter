@@ -1,7 +1,8 @@
 import 'package:app/controller/user.controller.dart';
+import 'package:app/core/models/response.model.dart';
+import 'package:app/core/models/user.model.dart';
 import 'package:app/core/storage.dart';
-import 'package:app/models/response.model.dart';
-import 'package:app/models/user.model.dart';
+
 import 'package:app/repositories/account.repository.dart';
 import 'package:app/stores/user.store.dart';
 import 'package:app/utils/response.message.dart';

@@ -1,5 +1,5 @@
-import 'package:app/models/response.model.dart';
-import 'package:app/models/user.model.dart';
+import 'package:app/core/models/response.model.dart';
+import 'package:app/core/models/user.model.dart';
 
 class UserRepository {
   //Api _api = locator<Api>();

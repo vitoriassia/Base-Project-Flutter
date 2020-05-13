@@ -1,4 +1,4 @@
-import 'package:app/models/user.model.dart';
+import 'package:app/core/models/user.model.dart';
 import 'package:flutter/material.dart';
 
 import '../enums.dart';
