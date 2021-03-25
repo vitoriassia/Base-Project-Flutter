@@ -1,5 +1,5 @@
+import 'package:app/enums.dart';
 import 'package:flutter/widgets.dart';
-import '../enums.dart';
 
 abstract class BaseViewModel extends ChangeNotifier {
   ViewState _state = ViewState.idle;

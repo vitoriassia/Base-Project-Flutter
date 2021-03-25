@@ -1,4 +1,4 @@
-import 'package:app/core/storage.dart';
+import 'package:app/core/services/storage_service.dart';
 import 'package:app/locator.dart';
 import 'package:dio/dio.dart';
 

@@ -1,4 +1,4 @@
-import 'package:app/view_models/base_viewmodel.dart';
+import 'package:app/core/view_models/base_viewmodel.dart';
 import 'package:flutter/material.dart';
 
 import 'package:provider/provider.dart';

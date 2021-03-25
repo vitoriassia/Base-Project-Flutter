@@ -1,5 +1,6 @@
 import 'package:app/screens/home/home_screen.dart';
 import 'package:app/screens/login/login_screen.dart';
+import 'package:app/stores/user_store.dart';
 import 'package:flutter/material.dart';
 
 import 'package:provider/provider.dart';
@@ -7,7 +8,6 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'constant.dart';
 import 'locator.dart';
-import 'stores/user.store.dart';
 //bool _isAuthenticated = false;
 //UserService _userService;
 

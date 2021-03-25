@@ -1,8 +1,6 @@
+import 'package:app/core/view_models/login_viewmodel.dart';
 import 'package:app/screens/base_view.dart';
-import 'package:app/screens/home/home_screen.dart';
-import 'package:app/utils/navigation.dart';
-import 'package:app/sharedWidgets/busy.button.dart';
-import 'package:app/view_models/login_viewmodel.dart';
+import 'package:app/sharedWidgets/busy_button.dart';
 import 'package:flutter/material.dart';
 
 import '../../constant.dart';
@@ -14,7 +12,9 @@ class LoginForm extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BaseView<LoginViewModel>(
-        builder: (contexte, model, _) => SingleChildScrollView(
+        onViewModelReady: (model) =>
+            model.setContextLoginViewModel(context: context),
+        builder: (context, model, _) => SingleChildScrollView(
               child: Container(
                 width: double.infinity,
                 height: 500,
@@ -47,7 +47,7 @@ class LoginForm extends StatelessWidget {
                                 cursorColor: Theme.of(context).accentColor,
                                 decoration:
                                     inputDecotationBlack(labelText: 'E-mail'),
-                                autovalidate: false,
+                                autovalidateMode: AutovalidateMode.disabled,
                                 autocorrect: false,
                                 validator: (value) =>
                                     (value.isEmpty) ? "E-mail inválido" : null,
@@ -79,12 +79,8 @@ class LoginForm extends StatelessWidget {
                                     BusyButton(
                                       isOutline: false,
                                       isBusy: model.state == ViewState.busy,
-                                      onPressed: () async {
-                                        if (await model.login(context))
-                                          navegationTowithAnimationRemoveUtils(
-                                              context: context,
-                                              page: HomeView());
-                                      },
+                                      onPressed: () async =>
+                                          await model.login(),
                                     ),
                                   ],
                                 ),

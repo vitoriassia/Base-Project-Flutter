@@ -1,6 +1,4 @@
-import 'package:app/stores/user.store.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 import 'drawer.item.dart';
 
@@ -11,7 +9,7 @@ class DrawerMenu extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final userModel = Provider.of<UserStore>(context).user;
+    // final userModel = Provider.of<UserStore>(context).user;
     return Container(
       width: 280,
       child: Drawer(
