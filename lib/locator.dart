@@ -1,8 +1,8 @@
+import 'package:app/view_models/login_viewmodel.dart';
 import 'package:get_it/get_it.dart';
 
 import 'core/services/api.dart';
 import 'core/storage.dart';
-import 'view-models/login.viewmodel.dart';
 
 GetIt locator = GetIt.instance;
 void setupLocator() {

@@ -1,12 +1,12 @@
+import 'package:app/screens/base_view.dart';
+import 'package:app/screens/home/home_screen.dart';
 import 'package:app/utils/navigation.dart';
-import 'package:app/view-models/login.viewmodel.dart';
-import 'package:app/views/homeView/home.view.dart';
-import 'package:app/widget/busy.button.dart';
+import 'package:app/sharedWidgets/busy.button.dart';
+import 'package:app/view_models/login_viewmodel.dart';
 import 'package:flutter/material.dart';
 
 import '../../constant.dart';
 import '../../enums.dart';
-import '../base.view.dart';
 
 class LoginForm extends StatelessWidget {
   static final id = 'sign.view';

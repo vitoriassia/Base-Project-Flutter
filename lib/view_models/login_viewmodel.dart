@@ -1,7 +1,7 @@
 import 'package:app/controller/login.controller.dart';
+import 'package:app/view_models/base_viewmodel.dart';
 
 import '../enums.dart';
-import 'base.viewmodel.dart';
 
 class LoginViewModel extends BaseViewModel {
   String email = 'vitor.iassia@innovareti.com.br';
