@@ -1,5 +1,5 @@
 import 'package:app/screens/home/home_screen.dart';
-import 'package:app/screens/loginView/login_view.dart';
+import 'package:app/screens/login/login_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'package:provider/provider.dart';
