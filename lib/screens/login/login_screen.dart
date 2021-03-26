@@ -35,14 +35,14 @@ class LoginScreen extends StatelessWidget {
                           child: Hero(
                             tag: 'logo',
                             child: Image.asset(
-                              'assets/icons/logo_principal.png',
+                              'assets/icons/flutter_icon.png',
                             ),
                           ),
                         ),
                         LoginForm(),
                         Image.asset(
-                          'assets/icons/logo_footer.png',
-                          height: 26,
+                          'assets/icons/dart_generic.png',
+                          height: 80,
                         )
                       ],
                     ),

@@ -23,7 +23,7 @@ class DefaultScaffold extends StatelessWidget {
               iconTheme: Theme.of(context).iconTheme,
               backgroundColor: Colors.white,
               title: Image.asset(
-                'assets/icons/logo_principal.png',
+                'assets/icons/flutter_icon.png',
                 fit: BoxFit.cover,
                 height: 55,
               ),

@@ -29,8 +29,9 @@ var defaultThemeData = ThemeData.light().copyWith(
   ),
 );
 
-const kTextTheme =
-    TextTheme(headline6: TextStyle(fontWeight: FontWeight.bold, fontSize: 25));
+const kTextTheme = TextTheme(
+    headline6: TextStyle(
+        fontWeight: FontWeight.bold, fontSize: 25, color: Colors.black));
 
 inputDecotationBlack({String labelText}) {
   return InputDecoration(
