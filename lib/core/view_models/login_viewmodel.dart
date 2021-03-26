@@ -23,7 +23,15 @@ class LoginViewModel extends BaseViewModel {
     return null;
   }
 
-  Future<void> login() async {
+  Future<void> validationForm() async {
+    if (this.email == "" || this.password == "")
+      responseMessage(
+          'E-mail ou senha inválido', 'error', _contextOfLoginViewModel);
+    else
+      _login();
+  }
+
+  Future<void> _login() async {
     setState(ViewState.busy);
     ResponseModel user = await _accountService.loginAccount(email, password);
     if (user.status) {

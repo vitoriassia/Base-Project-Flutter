@@ -60,7 +60,7 @@ class LoginForm extends StatelessWidget {
                         BusyButton(
                           isOutline: false,
                           isBusy: model.state == ViewState.busy,
-                          onPressed: () async => await model.login(),
+                          onPressed: () async => await model.validationForm(),
                         ),
                       ],
                     ),
