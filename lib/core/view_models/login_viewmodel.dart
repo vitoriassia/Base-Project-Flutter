@@ -8,7 +8,7 @@ import 'package:app/locator.dart';
 import 'package:app/screens/home/home_screen.dart';
 import 'package:app/stores/user_store.dart';
 import 'package:app/utils/navigation.dart';
-import 'package:app/utils/response.message.dart';
+import 'package:app/utils/response_message.dart';
 import 'package:flutter/widgets.dart';
 import 'package:provider/provider.dart';
 

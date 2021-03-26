@@ -1,6 +1,5 @@
+import 'package:app/utils/animation_transition.screen.dart';
 import 'package:flutter/material.dart';
-
-import 'animation.transition.screen.dart';
 
 void navegationTowithAnimation({context, Widget page}) {
   Navigator.push(
