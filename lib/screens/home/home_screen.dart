@@ -7,6 +7,28 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     //var store = Provider.of<UserStore>(context);
 
-    return DefaultScaffold(body: Container());
+    return DefaultScaffold(
+      body: Center(
+        child: Card(
+          child: Container(
+            width: 200,
+            height: 200,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  Icons.home,
+                  size: 70,
+                ),
+                Text(
+                  'Home Screen',
+                  style: Theme.of(context).textTheme.headline6,
+                )
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
   }
 }

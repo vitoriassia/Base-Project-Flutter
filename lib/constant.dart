@@ -17,6 +17,7 @@ var defaultThemeData = ThemeData.light().copyWith(
   textSelectionHandleColor: baseColorApp,
   textSelectionColor: baseColorApp,
   splashColor: Color(0x33000423),
+  textTheme: kTextTheme,
   buttonTheme: ButtonThemeData(
     disabledColor: Colors.grey[400],
     buttonColor: primaryColorApp,
@@ -27,6 +28,9 @@ var defaultThemeData = ThemeData.light().copyWith(
     splashColor: Color(0x33000423),
   ),
 );
+
+const kTextTheme =
+    TextTheme(headline6: TextStyle(fontWeight: FontWeight.bold, fontSize: 25));
 
 inputDecotationBlack({String labelText}) {
   return InputDecoration(

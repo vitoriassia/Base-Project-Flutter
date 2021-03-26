@@ -16,7 +16,6 @@ class DefaultScaffold extends StatelessWidget {
         DefaultTabController(
           length: 7,
           child: Scaffold(
-            backgroundColor: Theme.of(context).backgroundColor,
             drawer: DrawerMenu(),
             appBar: AppBar(
               centerTitle: true,
