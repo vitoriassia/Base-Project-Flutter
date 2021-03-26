@@ -18,12 +18,13 @@ class DrawerItem extends StatelessWidget {
       child: ListTile(
         leading: Icon(
           icon,
+          color: Colors.black,
           size: 22.0,
         ),
         title: Text(
           text,
           style: TextStyle(
-            color: Theme.of(context).primaryColor,
+            color: Colors.black,
             fontSize: 15.0,
           ),
         ),

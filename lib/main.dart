@@ -1,5 +1,6 @@
 import 'package:app/screens/home/home_screen.dart';
 import 'package:app/screens/login/login_screen.dart';
+import 'package:app/screens/profile/profile_screen.dart';
 import 'package:app/stores/user_store.dart';
 import 'package:flutter/material.dart';
 
@@ -39,7 +40,8 @@ class MyApp extends StatelessWidget {
         ],
         routes: {
           LoginScreen.id: (context) => LoginScreen(),
-          HomeView.id: (context) => HomeView(),
+          HomeScreen.id: (context) => HomeScreen(),
+          ProfileScreen.id: (context) => ProfileScreen(),
         },
         title: kAppTitle,
         theme: defaultThemeData,

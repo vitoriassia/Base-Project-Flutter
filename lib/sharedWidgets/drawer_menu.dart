@@ -1,4 +1,8 @@
+import 'package:app/screens/home/home_screen.dart';
+import 'package:app/screens/login/login_screen.dart';
+import 'package:app/screens/profile/profile_screen.dart';
 import 'package:app/sharedWidgets/drawer_item.dart';
+import 'package:app/utils/navigation.dart';
 import 'package:flutter/material.dart';
 
 class DrawerMenu extends StatelessWidget {
@@ -64,50 +68,25 @@ class DrawerMenu extends StatelessWidget {
                       icon: Icons.home,
                       text: 'Home',
                       onTap: () {
-                        // if (ModalRoute.of(context).settings.name ==
-                        //     'home.screen') {
-                        //   Navigator.pop(context);
-                        // } else {
-                        //  navegationTo(context: context, page: HomeView.id);
-                        // }
-                        // Navigator.pushNamed(context, ContactUsView.id);
+                        if (ModalRoute.of(context).settings.name ==
+                            'home_screen') {
+                          Navigator.pop(context);
+                        } else {
+                          navegationTo(context: context, page: HomeScreen.id);
+                        }
                       },
                     ),
                     DrawerItem(
                       icon: Icons.person,
                       text: 'Perfil',
                       onTap: () {
-                        // if (ModalRoute.of(context).settings.name ==
-                        //     'profile.screen') {
-                        //   Navigator.pop(context);
-                        // } else {
-                        //   navegationTo(context: context, page: ProfileView.id);
-                        // }
-                      },
-                    ),
-                    DrawerItem(
-                      icon: Icons.collections_bookmark,
-                      text: 'Minha Reserva',
-                      onTap: () {
-                        // if (ModalRoute.of(context).settings.name ==
-                        //     'meeting.screen') {
-                        //   Navigator.pop(context);
-                        // } else {
-                        //   navegationTo(
-                        //       context: context, page: ListMeetingView.id);
-                        // }
-                      },
-                    ),
-                    DrawerItem(
-                      icon: Icons.group,
-                      text: 'Meus Grupos',
-                      onTap: () {
-                        // if (ModalRoute.of(context).settings.name ==
-                        //     'group.screen') {
-                        //   Navigator.pop(context);
-                        // } else {
-                        //   navegationTo(context: context, page: GroupView.id);
-                        // }
+                        if (ModalRoute.of(context).settings.name ==
+                            'profile_screen') {
+                          Navigator.pop(context);
+                        } else {
+                          navegationTo(
+                              context: context, page: ProfileScreen.id);
+                        }
                       },
                     ),
                   ],
@@ -119,11 +98,11 @@ class DrawerMenu extends StatelessWidget {
                 onTap: () {
                   Navigator.pop(context);
 
-                  // Navigator.pushNamedAndRemoveUntil(
-                  //   context,
-                  //   StartView.id,
-                  //   (r) => false,
-                  // );
+                  Navigator.pushNamedAndRemoveUntil(
+                    context,
+                    LoginScreen.id,
+                    (r) => false,
+                  );
                 },
               ),
             ],

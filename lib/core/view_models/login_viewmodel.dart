@@ -37,7 +37,7 @@ class LoginViewModel extends BaseViewModel {
     if (user.status) {
       await _setupUser(user, _contextOfLoginViewModel);
       navegationTowithAnimationRemoveUtils(
-          context: this._contextOfLoginViewModel, page: HomeView());
+          context: this._contextOfLoginViewModel, page: HomeScreen());
     } else {
       responseMessage(user.data, 'error', _contextOfLoginViewModel);
     }

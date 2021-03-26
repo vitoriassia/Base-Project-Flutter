@@ -1,8 +1,8 @@
 import 'package:app/sharedWidgets/default_scaffold.dart';
 import 'package:flutter/material.dart';
 
-class HomeScreen extends StatelessWidget {
-  static const id = 'home_screen';
+class ProfileScreen extends StatelessWidget {
+  static const id = 'profile_screen';
   @override
   Widget build(BuildContext context) {
     //var store = Provider.of<UserStore>(context);
@@ -17,11 +17,11 @@ class HomeScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(
-                  Icons.home,
+                  Icons.person,
                   size: 70,
                 ),
                 Text(
-                  'Home Screen',
+                  'Profile Screen',
                   style: Theme.of(context).textTheme.headline6,
                 )
               ],
