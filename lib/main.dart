@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
           const Locale('pt'), // brasil
         ],
         routes: {
-          LoginView.id: (context) => LoginView(),
+          LoginScreen.id: (context) => LoginScreen(),
           HomeView.id: (context) => HomeView(),
         },
         title: kAppTitle,
@@ -54,7 +54,7 @@ class MyApp extends StatelessWidget {
           //           : LoginScreen();
           //     });
           //   case LoginScreen.id:
-          return MaterialPageRoute(builder: (_) => LoginView());
+          return MaterialPageRoute(builder: (_) => LoginScreen());
         },
       ),
     );
