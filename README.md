@@ -9,13 +9,13 @@ It is a basic flutter project with BaseView/Provider.
     <table>
         <tr>
             <td style="text-align: center">
-                    <img src="https://github.com/vitoriassia/Base-Project-Flutter/blob/main/assets/github_images/estrutura_de_pasta.jpeg" >
+                    <img src="https://github.com/vitoriassia/Base-Project-Flutter/blob/master/assets/github_images/estrutura_de_pasta.jpeg" >
             </td>
             <td style="text-align: center">
-                <img src="https://github.com/vitoriassia/Base-Project-Flutter/blob/main/assets/github_images/core_pasta.jpeg" />
+                <img src="https://github.com/vitoriassia/Base-Project-Flutter/blob/master/assets/github_images/core_pasta.jpeg" />
             </td>
               <td style="text-align: center">
-                <img src="https://github.com/vitoriassia/Base-Project-Flutter/blob/main/assets/github_images/screen_pastas.jpeg" />
+                <img src="https://github.com/vitoriassia/Base-Project-Flutter/blob/master/assets/github_images/screen_pastas.jpeg" />
             </td>
         </tr>
     </table>
@@ -28,10 +28,10 @@ It is a basic flutter project with BaseView/Provider.
     <table>
         <tr>
             <td style="text-align: center">
-                    <img src="https://github.com/vitoriassia/Base-Project-Flutter/blob/main/assets/github_images/print1.jpeg" >
+                    <img src="https://github.com/vitoriassia/Base-Project-Flutter/blob/master/assets/github_images/print1.jpeg" >
             </td>
             <td style="text-align: center">
-                <img src="https://github.com/vitoriassia/Base-Project-Flutter/blob/main/assets/github_images/print2.jpeg" />
+                <img src="https://github.com/vitoriassia/Base-Project-Flutter/blob/master/assets/github_images/print2.jpeg" />
             </td>
         </tr>
     </table>
