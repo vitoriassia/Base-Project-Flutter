@@ -1,4 +1,4 @@
-import 'package:app/sharedWidgets/default.scaffold.dart';
+import 'package:app/sharedWidgets/default_scaffold.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {

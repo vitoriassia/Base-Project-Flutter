@@ -1,6 +1,5 @@
+import 'package:app/sharedWidgets/drawer_item.dart';
 import 'package:flutter/material.dart';
-
-import 'drawer.item.dart';
 
 class DrawerMenu extends StatelessWidget {
   const DrawerMenu({

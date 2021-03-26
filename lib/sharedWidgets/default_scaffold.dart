@@ -1,6 +1,5 @@
+import 'package:app/sharedWidgets/drawer_menu.dart';
 import 'package:flutter/material.dart';
-
-import 'drawer.menu.dart';
 
 class DefaultScaffold extends StatelessWidget {
   final Widget body;
